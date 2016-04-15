@@ -30,7 +30,7 @@ return {
 	},
 
 	plugins = { -- To enable a plugin, add its name to the list.
-		'control.lua',
+		---'control.lua', fixing bugs ...
 		'blacklist.lua',
 		'about.lua',
 		'ping.lua',
