@@ -32,7 +32,7 @@ local action = function(msg)
 	elseif msg.text_lower:match('^/start') then
 		sendMessage(msg.chat.id, message, true,nil,true)
 		return
-	elseif msg.text_lower:match('^'..bot.name) then
+	elseif msg.text_lower:match('^bot') then
 		sendMessage(msg.chat.id, 'Yes?', true,nil,true)
 		return
 	elseif msg.text_lower:match('^hi') then
