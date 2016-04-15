@@ -18,7 +18,7 @@ You may want to set: `admin`, your Telegram ID; `time_offset`, a positive or neg
 If you want to add and enable a plugins , add them to the `plugins` folder and `plugins `table in `config.lua` (before help.lua) if you set this after `help.lua` plugin not shows in help message
 
 then return
-```chmod +x./launch.sh```
+```chmod +x ./launch.sh```
 ```./launch.sh install```
 and bot automatically run
 
