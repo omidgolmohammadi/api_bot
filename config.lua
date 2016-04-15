@@ -11,9 +11,6 @@ return {
 	-- The channel, group, or user to send error reports to.
 	-- If this is not set, errors will be printed to the console.
 	log_chat = nil,
-	-- The block of text returned by /start.
-	about_text = 'I am PinkPanther 🐆, the plugin-wielding, multipurpose Telegram bot.\n\nMy owner🍼 => [RoYalTeam](http://telegram.me/royalteamch)\nMy base🙇 => [topkecleon/otouto](https://github.com/topkecleon/otouto)\n\nSend => /help to get started.',
-
 	-- http://console.developers.google.com
 	google_api_key = '',
 	-- https://cse.google.com/cse
