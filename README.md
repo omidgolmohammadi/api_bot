@@ -18,9 +18,12 @@ You may want to set: `admin`, your Telegram ID; `time_offset`, a positive or neg
 If you want to add and enable a plugins , add them to the `plugins` folder and `plugins `table in `config.lua` (before help.lua) if you set this after `help.lua` plugin not shows in help message
 
 then return
-`./launch.sh install`
+```chmod +x./launch.sh```
+```./launch.sh install```
 and bot automatically run
 
+for sync bot with source run
+```./launch.sh update```
 
 ## Control plugins {#Control_plugins}
 Some plugins are designed to be used by the bot's owner. Here are some examples, how they're used, and what they do.
