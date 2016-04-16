@@ -87,6 +87,24 @@ on_msg_receive = function(msg) -- The fn run whenever a message is received.
 
 end
 
+inline_msg_receive = function(inline) -- The fn run whenever a inline query is received.
+	msg = {
+		id = inline.id,
+		chat = {
+			['id'] = inline.id,
+			['title'] = 'inline', 
+			['type'] = 'inline',
+			['title'] = inline.from.fisrt_name
+			},
+		from = inline.from,
+		message_id = math.random(1, 800),
+		text = '/!/inline '..inline.query,
+		date = os.time() + 20
+	}
+	-- Convent to message
+	on_msg_receive(msg)
+end
+
 bot_init() -- Actually start the script. Run the bot_init function.
 
 while is_started do -- Start a loop while the bot should be running.
@@ -95,7 +113,11 @@ while is_started do -- Start a loop while the bot should be running.
 	if res then
 		for i,v in ipairs(res.result) do -- Go through every new message.
 			last_update = v.update_id
-			on_msg_receive(v.message)
+			if v.message then
+				on_msg_receive(v.message)
+			elseif v.inline_query then
+				inline_msg_receive (v.inline_query)
+			end
 		end
 	else
 		print(config.errors.connection)
