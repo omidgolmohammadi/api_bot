@@ -22,7 +22,7 @@ bot_init = function() -- The function run when the bot is started or reloaded.
 
 	plugins = {} -- Load plugins.
 	for i,v in ipairs(config.plugins) do
-		local p = dofile('plugins/'..v)
+		local p = dofile('plugins/'..v..'.lua')
 		table.insert(plugins, p)
 	end
 
