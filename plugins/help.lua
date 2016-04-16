@@ -15,8 +15,7 @@ Send` /help [plugin name]` for more info.
 ]]
 
 local triggers = {
-	'^/help[@'..bot.username..']*',
-	'^/h[@'..bot.username..']*$'
+	'^[!/#]help[@'..bot.username..']*',
 }
 
 local action = function(msg)
