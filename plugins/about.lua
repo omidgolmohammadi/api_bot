@@ -6,6 +6,7 @@ local triggers = {
 	'^[!/#]start[@'..bot.username..']*',
 	'^bot[@'..bot.username..']*',
 	'^hi[@'..bot.username..']*',
+	''
 }
 
 local action = function(msg)
