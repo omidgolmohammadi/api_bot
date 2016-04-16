@@ -1,3 +1,4 @@
+local command = 'luarun'
 local triggers = {
 	'^/lua[@'..bot.username..']*'
 }
