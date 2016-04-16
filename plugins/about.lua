@@ -2,7 +2,10 @@ local command = 'about'
 local doc = '`Returns information about the bot.`'
 
 local triggers = {
-	''
+	'^[!/#]about[@'..bot.username..']*',
+	'^[!/#]start[@'..bot.username..']*',
+	'^bot[@'..bot.username..']*',
+	'^hi[@'..bot.username..']*',
 }
 
 local action = function(msg)
@@ -25,10 +28,10 @@ local action = function(msg)
 	if msg.new_chat_participant and msg.new_chat_participant.id == bot.id then
 		sendMessage(msg.chat.id, message, true,nil,true)
 		return
-	elseif msg.text_lower:match('^/about[@'..bot.username..']*') then
+	elseif msg.text_lower:match('^[!/#}about[@'..bot.username..']*') then
 		sendMessage(msg.chat.id, message, true,nil,true)
 		return
-	elseif msg.text_lower:match('^/start') then
+	elseif msg.text_lower:match('^[!/#]start') then
 		sendMessage(msg.chat.id, message, true,nil,true)
 		return
 	elseif msg.text_lower:match('^bot') then
