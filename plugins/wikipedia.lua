@@ -6,10 +6,8 @@ Aliases: /w, /wiki
 ```]]
 
 local triggers = {
-	'^/wikipedia[@'..bot.username..']*',
-	'^/wiki[@'..bot.username..']*',
-	'^/w[@'..bot.username..']*$',
-	'^/w[@'..bot.username..']* '
+	'^[!/#]wikipedia[@'..bot.username..']*',
+	'^[!/#}wiki[@'..bot.username..']*',
 }
 
 local action = function(msg)
