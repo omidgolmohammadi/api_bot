@@ -6,7 +6,9 @@ update() {
 	}
 
 install() {
-  sudo apt-get install lua-socket
+	sudo apt-get upgrade
+	sudo apt-get install lua5.2
+  	sudo apt-get install lua-socket
 	sudo apt-get install lua-sec
 	sudo apt-get install lua-cjson
 	sudo apt-get install curl
@@ -23,9 +25,8 @@ elif [ "$1" = "update" ]; then
 	 
 	 
 	 PinkPanther"
-  # echo "\e[36m"
 	lua bot.lua
-	echo 'otouto has stopped. ^C to exit.'
+	echo 'Your Bot has stopped. ^C to exit.'
 	sleep 5s
 	echo "\033[0;00m"
 done
