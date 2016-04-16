@@ -1,4 +1,4 @@
-local command = 'location <query>'
+local command = 'location'
 local doc = [[```
 /location <query>
 Returns a location from Google Maps.
