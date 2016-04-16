@@ -6,10 +6,8 @@ Alias: /g
 ```]]
 
 local triggers = {
-	'^/g[@'..bot.username..']*$',
-	'^/g[@'..bot.username..']* ',
-	'^/google[@'..bot.username..']*',
-	'^/gnsfw[@'..bot.username..']*'
+        '^[!/#]google[@'..bot.username..']*',
+	'^[!/#]g[@'..bot.username..']* ',
 }
 
 local action = function(msg)
