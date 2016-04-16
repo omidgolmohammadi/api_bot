@@ -5,7 +5,7 @@ Returns the time, date, and timezone for the given location.
 ```]]
 
 local triggers = {
-	'^/time[@'..bot.username..']*'
+	'^[!/#]time[@'..bot.username..']*'
 }
 
 local action = function(msg)
