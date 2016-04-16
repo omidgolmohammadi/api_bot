@@ -1,4 +1,4 @@
-local command = 'wikipedia <query>'
+local command = 'wikipedia'
 local doc = [[```
 /wikipedia <query>
 Returns an article from Wikipedia.
