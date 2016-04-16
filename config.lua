@@ -28,22 +28,22 @@ return {
 
 	plugins = { -- To enable a plugin, add its name to the list.
 		---'control.lua', fixing bugs ...
-		'blacklist.lua',
-		'about.lua',
-		'ping.lua',
-		'echo.lua',
-		'luarun.lua',
-		'gSearch.lua',
-		'gMaps.lua',
-		'wikipedia.lua',
-		'imdb.lua',
-		'calc.lua',
-		'time.lua',
-		'cats.lua',
-		'shout.lua',
+		'blacklist',
+		'about',
+		'ping',
+		'echo',
+		'luarun',
+		'gSearch',
+		'gMaps',
+		'wikipedia',
+		'imdb.',
+		'calc',
+		'time',
+		'cats',
+		'shout.',
 		-- Put new plugins above this line.
-		'help.lua',
-		'greetings.lua'
+		'help.',
+		'greetings.'
 	}
 
 }
