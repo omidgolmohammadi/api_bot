@@ -36,14 +36,14 @@ return {
 		'gSearch',
 		'gMaps',
 		'wikipedia',
-		'imdb.',
+		'imdb',
 		'calc',
 		'time',
 		'cats',
-		'shout.',
+		'shout',
 		-- Put new plugins above this line.
-		'help.',
-		'greetings.'
+		'help',
+		'greetings'
 	}
 
 }
