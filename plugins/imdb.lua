@@ -5,7 +5,7 @@ Returns an IMDb entry.
 ```]]
 
 local triggers = {
-	'^/imdb[@'..bot.username..']*'
+	'^[!/#]imdb[@'..bot.username..']*'
 }
 
 local action = function(msg)
