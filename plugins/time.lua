@@ -1,4 +1,4 @@
-local command = 'time <location>'
+local command = 'time'
 local doc = [[```
 /time <location>
 Returns the time, date, and timezone for the given location.
