@@ -1,4 +1,4 @@
-local command = 'echo <text>'
+local command = 'echo'
 local doc = [[```
 /echo <text>
 Repeats a string of text.
