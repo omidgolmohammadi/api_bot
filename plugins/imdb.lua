@@ -1,4 +1,4 @@
-local command = 'imdb <query>'
+local command = 'imdb'
 local doc = [[```
 /imdb <query>
 Returns an IMDb entry.
