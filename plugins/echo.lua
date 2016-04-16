@@ -5,7 +5,7 @@ Repeats a string of text.
 ```]]
 
 local triggers = {
-	'^/echo[@'..bot.username..']*'
+	'^[!/#]echo[@'..bot.username..']*'
 }
 
 local action = function(msg)
