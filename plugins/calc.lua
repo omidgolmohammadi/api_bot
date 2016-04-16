@@ -1,4 +1,4 @@
-local command = 'calc <expression>'
+local command = 'calc'
 local doc = [[```
 /calc <expression>
 Returns solutions to mathematical expressions and conversions between common units. Results provided by mathjs.org.
