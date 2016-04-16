@@ -1,20 +1,17 @@
- -- This plugin should go at the end of your plugin list in
- -- config.lua, but not after greetings.lua.
+local help_text = '*Plugins list:*\n'
 
-local help_text = '*Available commands:*'
 
 local n = 0
-for i,v in ipairs(plugins) do
-  if v.command then
-    n = n + 1
-    help_text = help_text .. '\n`'..n..'.` /' .. v.command:gsub('%[', '\\[')
+for i,v in ipairs(config.plugins) 
+   do n = n + 1
+    help_text = help_text .. '\n`'..n..'` - *' ..v..'*'
   end
-end
+
 
 help_text = help_text .. [[
 
-/help <command>
-Arguments: <required> \[optional]
+Send` /help [plugin name]` for more info.
+[RoyalTeam](telegram.me/RoyalTeamCh)
 ]]
 
 local triggers = {
