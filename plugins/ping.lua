@@ -1,5 +1,4 @@
- -- Actually the simplest plugin ever!
-
+local command = 'ping'
 local triggers = {
 	'^/ping[@'..bot.username..']*',
 	'^/annyong[@'..bot.username..']*'
