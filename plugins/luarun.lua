@@ -1,6 +1,6 @@
 local command = 'luarun'
 local triggers = {
-	'^/lua[@'..bot.username..']*'
+	'^[!/#]lua[@'..bot.username..']*'
 }
 
 local action = function(msg)
