@@ -5,7 +5,7 @@ Shouts something.
 ```]]
 
 local triggers = {
-	'^/shout[@'..bot.username..']*'
+	'^[!/#]shout[@'..bot.username..']*'
 }
 
 local action = function(msg)
