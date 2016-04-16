@@ -7,7 +7,7 @@ local command = 'cat'
 local doc = '`Returns a cat!`'
 
 local triggers = {
-	'^/cat[@'..bot.username..']*$'
+	'^[!/#]cat[@'..bot.username..']*$'
 }
 
 local action = function(msg)
