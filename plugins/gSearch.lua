@@ -1,4 +1,4 @@
-local command = 'google <query>'
+local command = 'google'
 local doc = [[```
 /google <query>
 Returns four (if group) or eight (if private message) results from Google. Safe search is enabled by default, use "/gnsfw" to disable it.
