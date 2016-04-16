@@ -1,4 +1,4 @@
-local command = 'shout <text>'
+local command = 'shout'
 local doc = [[```
 /shout <text>
 Shouts something.
