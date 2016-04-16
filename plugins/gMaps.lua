@@ -6,9 +6,8 @@ Alias: /loc
 ```]]
 
 local triggers = {
-	'^/location[@'..bot.username..']*',
-	'^/loc[@'..bot.username..']* ',
-	'^/loc[@'..bot.username..']*$'
+	'^[!/#]location[@'..bot.username..']*',
+	'^[!/#]loc[@'..bot.username..']* ',
 }
 
 local action = function(msg)
