@@ -5,7 +5,7 @@ Returns solutions to mathematical expressions and conversions between common uni
 ```]]
 
 local triggers = {
-	'^/calc[@'..bot.username..']*'
+	'^[!/#]calc[@'..bot.username..']*'
 }
 
 local action = function(msg)
