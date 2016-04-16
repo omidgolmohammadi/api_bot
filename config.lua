@@ -17,7 +17,6 @@ return {
 	google_cse_key = '',
 	-- http://thecatapi.com/docs.html
 	thecatapi_key = '',
-	-- http://api.nasa.gov
 	
 	errors = { -- Generic error messages used in various plugins.
 		connection = 'Connection error.',
